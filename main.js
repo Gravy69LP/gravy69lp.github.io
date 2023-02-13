@@ -6,7 +6,7 @@ const book = document.querySelector("#book");
 const paper1 = document.querySelector("#p1")
 const paper2 = document.querySelector("#p2")
 const paper3 = document.querySelector("#p3")
-const audio = new Audio ('paper.mp3')
+const audio = new Audio ('web/paper.mp3')
 //Event listeners 
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
