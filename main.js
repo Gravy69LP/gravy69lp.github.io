@@ -6,6 +6,7 @@ const book = document.querySelector("#book");
 const paper1 = document.querySelector("#p1")
 const paper2 = document.querySelector("#p2")
 const paper3 = document.querySelector("#p3")
+const audio = new Audio ('paper.mp3')
 //Event listeners 
 prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
@@ -14,8 +15,6 @@ nextBtn.addEventListener("click", goNextPage);
 let currentLocation = 1;
 let numOfPapers = 3;
 let maxLocation = numOfPapers + 1;
-
-
 
 function openBook(){
 book.style.transform = "translateX(50%)";
@@ -34,6 +33,7 @@ book.style.transform = "translateX(100%)";
 }
 
 function goNextPage(){
+    audio.play();
 if (currentLocation < maxLocation){
     switch(currentLocation) {
         case 1:
@@ -58,6 +58,7 @@ if (currentLocation < maxLocation){
 }
 
 function goPrevPage(){
+    audio.play();
 if(currentLocation > 1) {
     switch(currentLocation) {
         case 2:
