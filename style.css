@@ -17,8 +17,8 @@ body {
 /*book*/
 .book{
     position: relative;
-    width: 350px;
-    height: 500px;
+    width: 700px;
+    height: 900px;
     transition: transfrom 0.5s;
 
 }
